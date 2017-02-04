@@ -35,7 +35,7 @@ if(checkrobot()){
  }
  $redis = new redis(); 
  $redis->connect('127.0.0.1', 6379);  
- $redis->auth("DBAPP@2016_www.hackinn.com");
+ $redis->auth("yourpasscode");
  $gettime = $redis->get($onlineip);
  if($gettime == null){
    $redis->set($onlineip,1);
