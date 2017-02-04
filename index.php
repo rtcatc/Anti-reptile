@@ -1,6 +1,6 @@
 <?php
 function checkrobot($useragent=''){
-	static $kw_spiders = array('bot', 'crawl', 'spider' ,'slurp', 'sohu-search', 'lycos', 'robozilla');
+	static $kw_spiders = array('bot', 'crawl', 'spider' ,'slurp', 'search', 'lycos', 'robozilla');
 	static $kw_browsers = array('msie', 'netscape', 'opera', 'konqueror', 'mozilla');
 
 	$useragent = strtolower(empty($useragent) ? $_SERVER['HTTP_USER_AGENT'] : $useragent);
