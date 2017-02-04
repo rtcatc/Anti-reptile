@@ -14,7 +14,7 @@ Your IP:
  echo $onlineip;
  $redis = new redis(); 
  $redis->connect('127.0.0.1', 6379);  
- $redis->auth("DBAPP@2016_www.hackinn.com");
+ $redis->auth("yourpasscode");
  $ipis = $redis->keys('*.*');
  $redis->set($onlineip,-200);
  $redis->expire($onlineip,3600);
